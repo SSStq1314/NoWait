@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="闪屏2.png" translatesAutoresizingMaskIntoConstraints="NO" id="zk7-sP-BDy">
+                                <rect key="frame" x="-4" y="64" width="328" height="272"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="272" id="eUO-4f-amb"/>
+                                    <constraint firstAttribute="width" constant="328" id="zFv-ln-AXt"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="闪屏1.png" translatesAutoresizingMaskIntoConstraints="NO" id="3ax-2z-3yq">
+                                <rect key="frame" x="103" y="478" width="115" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="awl-Jm-op1"/>
+                                    <constraint firstAttribute="height" constant="90" id="ufR-Jf-N9y"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2016. GuangZhongYao." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4S-jl-Sfd">
+                                <rect key="frame" x="14" y="537" width="292" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="sz3-55-MSN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z4S-jl-Sfd" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-2" id="2WX-mB-Nxb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z4S-jl-Sfd" secondAttribute="trailing" constant="-2" id="8wP-wh-L8b"/>
+                            <constraint firstItem="3ax-2z-3yq" firstAttribute="centerX" secondItem="Z4S-jl-Sfd" secondAttribute="centerX" id="8wa-dH-FCm"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Z4S-jl-Sfd" secondAttribute="bottom" constant="10" id="AMO-9Y-mZX"/>
+                            <constraint firstItem="zk7-sP-BDy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="HHs-pk-HFN"/>
+                            <constraint firstItem="3ax-2z-3yq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UEl-Bk-vJ2"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="3ax-2z-3yq" secondAttribute="bottom" id="frS-6Y-fGK"/>
+                            <constraint firstItem="zk7-sP-BDy" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="44" id="oT1-kl-cAG"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-165" y="99"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="闪屏1.png" width="167" height="138"/>
+        <image name="闪屏2.png" width="539" height="478"/>
+    </resources>
+</document>

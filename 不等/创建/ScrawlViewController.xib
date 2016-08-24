@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScrawlViewController">
+            <connections>
+                <outlet property="scrawl" destination="3aS-rs-lKE" id="P1R-WH-icd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ql-g1-xZj">
+                    <rect key="frame" x="263" y="69" width="79" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="79" id="SsV-OM-ORV"/>
+                        <constraint firstAttribute="height" constant="51" id="mbs-wY-iKd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="清空"/>
+                    <connections>
+                        <action selector="dele:" destination="-1" eventType="touchUpInside" id="LWQ-pj-5DH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2b5-nn-ZWF">
+                    <rect key="frame" x="72" y="69" width="79" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="79" id="Mrz-Nc-NJz"/>
+                        <constraint firstAttribute="height" constant="51" id="TPa-84-zz1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="撤销"/>
+                    <connections>
+                        <action selector="revoke:" destination="-1" eventType="touchUpInside" id="N5U-E7-2hJ"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3aS-rs-lKE" customClass="Scrawl">
+                    <rect key="frame" x="8" y="128" width="398" height="540"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="2b5-nn-ZWF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="72" id="1J5-Yb-mTd"/>
+                <constraint firstItem="2b5-nn-ZWF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="69" id="62O-iY-Dqy"/>
+                <constraint firstItem="3aS-rs-lKE" firstAttribute="top" secondItem="2b5-nn-ZWF" secondAttribute="bottom" constant="8" id="Lnj-2Z-RMf"/>
+                <constraint firstItem="3ql-g1-xZj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="69" id="X1T-hU-H4o"/>
+                <constraint firstAttribute="trailing" secondItem="3ql-g1-xZj" secondAttribute="trailing" constant="72" id="XjV-xv-Lnd"/>
+                <constraint firstAttribute="trailing" secondItem="3aS-rs-lKE" secondAttribute="trailing" constant="8" id="isk-ge-q9I"/>
+                <constraint firstItem="3aS-rs-lKE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="u5Y-HD-nUq"/>
+                <constraint firstAttribute="bottom" secondItem="3aS-rs-lKE" secondAttribute="bottom" constant="68" id="xUo-gS-IUC"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+        </view>
+    </objects>
+</document>
